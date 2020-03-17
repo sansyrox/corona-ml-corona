@@ -21,6 +21,9 @@
     }
   </style>
   <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128233227-2"></script>
+
 </head>
 
 
@@ -83,7 +86,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="script.js"></script>
   <script>
-
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-128233227-2');
   </script>
 </body>
 
