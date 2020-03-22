@@ -22,7 +22,7 @@ def script_creator():
                         },
                     "geometry": {
                         "type":"Point",
-                        "coordinates": [i["lat"]*1.05,i["long"]*1.15][::-1]
+                        "coordinates": [random.randrange(i["lat"],i["lat"]*1.05),random.randrange(i["long"],i["long"]*1.15)][::-1]
                         }
 
 
