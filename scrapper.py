@@ -35,7 +35,7 @@ def script_creator():
 
 
 def csv_gen():
-    days = [31,29,17]
+    days = [31,29,23]
 
     arr = []
     count = 0

@@ -39,9 +39,9 @@ ctr=0
 for i in X_test.to_numpy():
     acc+=[100 - abs(predictions[ctr][0]-Y[i[0]-1])/Y[i[0]-1] * 100]
     ctr+=1
-    
+
 # print(sum(acc)/len(acc))
-    
+
 # if sum(acc)/len(acc) > 71:
 #     print(rs, sum(acc)/len(acc))
     # break
