@@ -35,11 +35,12 @@ def script_creator():
 
 
 def csv_gen():
-    days = [31,29,23]
+    days = [31,29,26]
 
     arr = []
     count = 0
     curr = 1
+    s=0
 
     for x in range(1,4):
         month = x
@@ -50,7 +51,7 @@ def csv_gen():
             res = requests.get(str)
 
             if res.status_code == 502:
-                time.sleep(1)
+                # time.sleep(1)
                 res = requests.get(str)
             # res = res.json()
             if res.status_code == 200:
@@ -66,10 +67,11 @@ def csv_gen():
             curr+=1
 
             if month!=1:
-                arr.append([i+days[month-1],count])
+                arr.append([s,count])
             else:
-                arr.append([i,count])
-
+                arr.append([s,count])
+            
+            s+=1
             print(str, res.status_code)
             # time.sleep(1)
 
