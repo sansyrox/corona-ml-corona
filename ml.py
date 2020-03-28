@@ -54,7 +54,7 @@ population = 1000000
 for i in range(10**10):
     # print(i)
     x = lm.predict([[i]])
-    print(i,x[0][0]/population * 100)
+    print(i,x[0][0])
 
     if x[0][0] >= population:
         print("Print asn is ", i)
